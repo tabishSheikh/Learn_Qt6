@@ -1,0 +1,5 @@
+Introduction to Qt 6 Toolkit
+
+Welcome to this Qt 6 tutorial series, where we delve into the functionalities of the Qt 6 library. In this section, we'll guide you through the installation process of the Qt 6 library and help you create your initial Qt 6 application.
+
+Qt, originally developed by Trolltech, a Norwegian software company, underwent several transitions. In 2008, Nokia acquired Trolltech. Subsequently, in August 2012, Digia, a Finnish development company, acquired Qt software technologies from Nokia. Concurrently, the Qt Project was established to advance the development of open-source Qt. The official website for the open-source Qt toolkit can be accessed at qt.io. Presently, Qt undergoes development by both the Qt Company, a subsidiary of Digia, and the Qt Project under open-source governance. This collaborative effort involves contributions from individual developers and various firms.
