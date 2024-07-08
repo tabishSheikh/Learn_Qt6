@@ -8,3 +8,19 @@ In 2008, Nokia acquired Trolltech. Subsequently, in August 2012, Digia, a Finnis
 Concurrently, the Qt Project was established to advance the development of open-source Qt.
 The official website for the open-source Qt toolkit can be accessed at qt.io. 
 Presently, Qt undergoes development by both the Qt Company, a subsidiary of Digia, and the Qt Project under open-source governance. This collaborative effort involves contributions from individual developers and various firms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
