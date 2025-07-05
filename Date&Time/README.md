@@ -1,25 +1,50 @@
-In this unit of our Qt6 C++ programming guide, we explore the intricacies of managing date and time, a fundamental aspect in many software applications.
+# 📅 Date & Time in Qt6 – Practical Examples
 
-Key Classes for Date and Time in Qt6:
+This folder explores **how to work with date and time in Qt6** using C++. The examples cover everything from initializing dates, formatting, comparing, working with Julian days, and converting between local/UTC time.
 
-  -QDate Class: Designed for handling calendar dates within the Gregorian calendar system, QDate provides a suite of methods for various operations including   
-   assessing, comparing, and manipulating dates. It's an essential tool for any date-related functionality in your application.
+These examples are console-based and use `QTextStream` for output. They're ideal for beginners and intermediate learners who want to understand how Qt handles time-related operations.
 
-  -QTime Class: This class is dedicated to clock time management. It offers a range of methods for tasks like comparing different times, fetching the current time, 
-   and performing a variety of time manipulation operations, making it indispensable for time-sensitive applications.
+---
 
-  -QDateTime Class: A hybrid that combines the features of both QDate and QTime, QDateTime offers a comprehensive solution for handling both date and time in a   
-   unified manner. This class simplifies scenarios where both date and time are used together, providing a more streamlined approach.
+## 🧠 What You’ll Learn
 
+- ✅ How to use `QDate`, `QTime`, and `QDateTime`
+- ✅ Custom and predefined date/time formats
+- ✅ Checking date validity and comparing dates
+- ✅ Calculating leap years, days between dates, and Julian day numbers
+- ✅ Converting time to/from Unix epoch format
+- ✅ Displaying time in both UTC and local formats
 
-Focus on Command-Line Applications:
-  -Given that our projects in this unit are command-line applications, the Qt GUI module is not required. To adapt our projects to this environment, we include the     'QT -= gui' directive in our project files. This step ensures that the Qt GUI module is excluded, allowing for a more focused and efficient command-line       
-   application development.
-   
-Advantages and Applications:
-  -By learning to utilize these classes effectively, you will be able to manage date and time data in your Qt6 applications with greater precision and flexibility. 
-  
-Whether you're building applications that require scheduling, timestamping, or time zone conversions, these classes provide the foundational tools needed.
-The focus on command-line applications in this unit also serves to strengthen your understanding of Qt6's capabilities in a non-GUI context, broadening your skill set in C++ programming with Qt6.
+---
 
-By the end of this unit, you will have gained a thorough understanding of date and time management in Qt6, equipped with the skills to implement sophisticated date and time functionalities in your C++ applications.
+## 📂 File Overview
+
+| File Name                          | Description |
+|-----------------------------------|-------------|
+| `CurrentDateTimeDisplay.cpp`      | Displays current date and time using `QDate` and `QTime` |
+| `CurrentTimeDisplay.cpp`          | Prints only the current system time |
+| `CurrentTimeFormatting.cpp`       | Formats current time in various custom ways |
+| `CustomDateFormatting.cpp`        | Shows different custom date output formats |
+| `DateAndJulianDayDisplay.cpp`     | Prints both Gregorian and Julian dates |
+| `DateCalculations.cpp`            | Adds/subtracts days and calculates days to a future date |
+| `DateComparison.cpp`              | Compares two dates to see which comes earlier |
+| `DateFormatting.cpp`              | Demonstrates different formatting styles with `QDate` |
+| `DateTimeToString.cpp`            | Converts `QDateTime` to a formatted string |
+| `DateValidityCheck.cpp`           | Checks if given dates are valid using `.isValid()` |
+| `DayOfWeekDisplay.cpp`            | Gets the day name from a date using `QLocale` |
+| `DaysInMonthAndYear.cpp`          | Gets number of days in a month/year using `daysInMonth()` |
+| `HistoricalDatesDifference.cpp`   | Calculates days between historical events and today |
+| `LeapYearChecker.cpp`             | Checks which years in a list are leap years |
+| `LocalAndUniversalDateTime.cpp`   | Displays current time in both local and UTC formats |
+| `UnixTimestampConversion.cpp`     | Converts to/from Unix time (epoch) using `QDateTime` |
+| `current_datetime.cpp`            | Retrieves and prints the current system date and time |
+
+---
+
+## ⚙️ Compilation Instructions
+
+If you're using CMake, here's a basic structure to compile any of these:
+
+```cmake
+add_executable(current_datetime "Date&Time/current_datetime.cpp")
+target_link_libraries(current_datetime Qt6::Core)
