@@ -29,13 +29,3 @@ Here’s a breakdown of each file and what it covers:
 | `QStringList_Iteration.cpp`    | Splitting a string and iterating through the list using `QStringListIterator` |
 | `CustomSorting/`               | Sorting custom `Book` class objects stored in a `QList<Book>` using `std::sort` |
 
----
-
-## ⚙️ How to Compile & Run
-
-These examples are designed to work with **CMake** and **Qt6**. If you're using your own `CMakeLists.txt`, just include each file like this:
-
-```cmake
-add_executable(qvector_basics "Containers in Qt6/QVector_Basics.cpp")
-target_link_libraries(qvector_basics Qt6::Core)
-
