@@ -32,3 +32,30 @@ Each folder focuses on a specific concept or component of Qt6 — including stri
 
 Most examples are console-based and can be built using either **qmake** or **CMake**. Project files (`.pro`) are provided where necessary.
 
+📌 Coming Soon
+We’ll be adding even more exciting sections soon:
+
+Building First programs
+
+Menus and toolbars
+
+Layout management
+
+Events and signals
+
+Widgets
+
+Widgets II
+
+Painting
+
+Custom widget
+
+Snake game
+
+Breakout game
+
+👉 Stay tuned and keep following the repo!
+
+
+
