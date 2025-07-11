@@ -1,9 +1,8 @@
-// This example demonstrates how to get the size of a file using Qt6's QFileInfo class.
 
-#include <QTextStream>   // For reading/writing to console
+#include <QTextStream>   
 #include <QFileInfo>     // Provides information about files and directories
 #include <QFile>         // To verify file existence
-#include <QCoreApplication> // Needed in Qt6 for console apps
+#include <QCoreApplication> 
 
 int main(int argc, char *argv[]) {
     // QCoreApplication is used for non-GUI applications in Qt6
@@ -34,5 +33,4 @@ int main(int argc, char *argv[]) {
     // Retrieve file size in bytes
     qint64 size = fileinfo.size();
 
-    // Format the output
-
+ 
