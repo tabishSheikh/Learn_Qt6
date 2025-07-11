@@ -1,0 +1,10 @@
+crimson
+amber
+charcoal
+mint
+indigo
+coral
+ivory
+olive
+peach
+plum
